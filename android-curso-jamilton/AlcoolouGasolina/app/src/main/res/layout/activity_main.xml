@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ic_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_car"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Álcool ou Gasolina?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_car"/>
+
+    <TextView
+        android:id="@+id/txt_saiba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saiba a melhor opção de abastecimento do seu carro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_titulo"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_preco_alcool"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Preço álcool ex: 1.90"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/txt_saiba"
+        app:layout_constraintEnd_toStart="@id/txt_saiba"
+        app:layout_constraintTop_toBottomOf="@id/txt_saiba"/>
+
+    <EditText
+        android:id="@+id/edt_preco_gasolina"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:hint="Preço gasolina ex: 2.60"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/edt_preco_alcool"
+        app:layout_constraintEnd_toEndOf="@id/edt_preco_alcool"
+        app:layout_constraintTop_toBottomOf="@id/edt_preco_alcool"/>
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/edt_preco_gasolina"
+        app:layout_constraintEnd_toEndOf="@id/edt_preco_gasolina"
+        app:layout_constraintTop_toBottomOf="@id/edt_preco_gasolina"/>
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Melhor utilizar"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_calcular"
+        app:layout_constraintStart_toStartOf="@+id/btn_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/btn_calcular" />
+</androidx.constraintlayout.widget.ConstraintLayout>
