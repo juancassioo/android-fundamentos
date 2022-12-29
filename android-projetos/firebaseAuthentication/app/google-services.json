@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1048210332578",
+    "project_id": "supervisiona-promo-teste",
+    "storage_bucket": "supervisiona-promo-teste.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048210332578:android:9a24e225f722dfb327b0fb",
+        "android_client_info": {
+          "package_name": "com.example.supervisionapromo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048210332578-fbg22m55qevv2at9ldfppo4fe1us9msb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9O8yiEx0KnI9rEBenRSdSrMEwLUX3JUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048210332578-fbg22m55qevv2at9ldfppo4fe1us9msb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
