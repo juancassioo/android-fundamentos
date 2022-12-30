@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"/>
+
+    <Switch
+        android:id="@+id/swt_lembrar_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="ligado"
+        android:textOff="Desligado"
+        android:text="Lembrar Senha"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"/>
+
+    <ToggleButton
+        android:id="@+id/tgb_alterna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="ligado"
+        android:textOff="Desligado"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toast"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_alert_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialog"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/prg_bar_circle"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/prg_bar_horizontal"
+        android:layout_marginTop="20dp"
+        android:max="10"
+        android:progress="1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Bar"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_progresso_seek_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Progresso: "/>
+
+    <Button
+        android:id="@+id/btn_seek_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seek Bar"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
